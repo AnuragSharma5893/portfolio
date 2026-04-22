@@ -1,4 +1,4 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { About, Blog, Gallery, Home, Music, Newsletter, Person, Playground, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -301,7 +301,281 @@ const gallery: Gallery = {
   ],
 };
 
-const music = {
-  
-}
-export { person, social, newsletter, home, about, blog, work, gallery };
+const music: Music = {
+  path: "/music",
+  label: "Music",
+  title: `Music – ${person.name}`,
+  description: `Songs and artists ${person.name} loves and listens to`,
+  tracks: [
+    {
+      title: "Blinding Lights",
+      artist: "The Weeknd",
+      album: "After Hours",
+      genre: "Synth-pop",
+      mood: ["energetic", "nostalgic"],
+      link: "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
+    },
+    {
+      title: "Tum Hi Ho",
+      artist: "Arijit Singh",
+      album: "Aashiqui 2",
+      genre: "Bollywood",
+      mood: ["emotional", "romantic"],
+      link: "https://open.spotify.com/track/6vfqte2ICbzMy3Vu0MpSqC",
+    },
+    {
+      title: "Levitating",
+      artist: "Dua Lipa",
+      album: "Future Nostalgia",
+      genre: "Pop",
+      mood: ["upbeat", "fun"],
+      link: "https://open.spotify.com/track/463CkQjx2Zk1yXoBuierM9",
+    },
+    {
+      title: "Kesariya",
+      artist: "Arijit Singh",
+      album: "Brahmastra",
+      genre: "Bollywood",
+      mood: ["romantic", "soulful"],
+      link: "https://open.spotify.com/track/2tRcCHORmXpDMFXKIjMhRo",
+    },
+    {
+      title: "Starboy",
+      artist: "The Weeknd ft. Daft Punk",
+      album: "Starboy",
+      genre: "R&B / Pop",
+      mood: ["chill", "cool"],
+      link: "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
+    },
+    {
+      title: "Raataan Lambiyan",
+      artist: "Jubin Nautiyal & Asees Kaur",
+      album: "Shershaah",
+      genre: "Bollywood",
+      mood: ["romantic", "dreamy"],
+      link: "https://open.spotify.com/track/0pVD7RfGNXkbvfAhFsIWBs",
+    },
+    {
+      title: "As It Was",
+      artist: "Harry Styles",
+      album: "Harry's House",
+      genre: "Indie Pop",
+      mood: ["melancholic", "catchy"],
+      link: "https://open.spotify.com/track/4Dvkj6JhhA12EX05fT7y2e",
+    },
+    {
+      title: "Chaleya",
+      artist: "Arijit Singh & Shilpa Rao",
+      album: "Jawan",
+      genre: "Bollywood",
+      mood: ["romantic", "vibrant"],
+      link: "https://open.spotify.com/track/6xPByLlB1MjbAqCvaBJGjW",
+    },
+  ],
+};
+
+const playground: Playground = {
+  path: "/playground",
+  label: "Playground",
+  title: `Playground – ${person.name}`,
+  description: "A collection of fun browser games to kill time and have a blast",
+  games: [
+    {
+      title: "2048",
+      description: "Slide tiles on a grid to combine numbers and reach 2048.",
+      link: "https://play2048.co/",
+      embedUrl: "https://play2048.co/",
+      tags: ["puzzle", "numbers", "strategy"],
+    },
+    {
+      title: "Flappy Bird",
+      description: "Tap to keep the bird flying through the pipes — deceptively hard.",
+      link: "https://flappybird.io/",
+      embedUrl: "https://flappybird.io/",
+      tags: ["arcade", "reflex", "one-tap"],
+    },
+    {
+      title: "Snake Game",
+      description: "Classic snake — eat, grow, and don't hit yourself.",
+      link: "https://playsnake.org/",
+      embedUrl: "https://playsnake.org/",
+      tags: ["classic", "arcade", "strategy"],
+    },
+    {
+      title: "Chrome Dinosaur",
+      description: "Jump over cacti in the iconic offline Chrome dino game.",
+      link: "https://chromedino.com/",
+      embedUrl: "https://chromedino.com/",
+      tags: ["arcade", "reflex", "classic"],
+    },
+    {
+      title: "Pac-Man",
+      description: "Eat dots, dodge ghosts — the arcade legend lives on in the browser.",
+      link: "https://www.google.com/logos/2010/pacman10-i.html",
+      embedUrl: "https://www.google.com/logos/2010/pacman10-i.html",
+      tags: ["classic", "arcade", "maze"],
+    },
+    {
+      title: "Wordle",
+      description: "Guess the 5-letter word in 6 tries — the daily word puzzle.",
+      link: "https://www.nytimes.com/games/wordle/index.html",
+      tags: ["word", "puzzle", "daily"],
+    },
+    {
+      title: "Tetris",
+      description: "Stack falling blocks and clear lines in the timeless puzzle game.",
+      link: "https://tetris.com/play-tetris",
+      tags: ["puzzle", "classic", "strategy"],
+    },
+    {
+      title: "Agar.io",
+      description: "Grow your cell by eating others in this competitive multiplayer blob game.",
+      link: "https://agar.io/",
+      embedUrl: "https://agar.io/",
+      tags: ["multiplayer", "strategy", "io-game"],
+    },
+    // ── Retro Classics ──────────────────────────────────────
+    {
+      title: "Space Invaders",
+      description: "Defend Earth from relentless alien waves in the arcade original from 1978.",
+      link: "https://www.retrogames.cc/arcade-games/space-invaders.html",
+      tags: ["retro", "arcade", "shooter"],
+    },
+    {
+      title: "Asteroids",
+      description: "Blast floating rocks and enemy saucers drifting through deep space.",
+      link: "https://www.retrogames.cc/arcade-games/asteroids.html",
+      tags: ["retro", "arcade", "shooter"],
+    },
+    {
+      title: "Galaga",
+      description: "Intercept waves of alien attackers in this shoot-'em-up arcade legend.",
+      link: "https://www.retrogames.cc/arcade-games/galaga.html",
+      tags: ["retro", "arcade", "shooter"],
+    },
+    {
+      title: "Frogger",
+      description: "Guide your frog safely across busy roads and treacherous rivers.",
+      link: "https://www.retrogames.cc/arcade-games/frogger.html",
+      tags: ["retro", "arcade", "reflex"],
+    },
+    {
+      title: "Centipede",
+      description: "Shoot the descending centipede while dodging spiders and fleas.",
+      link: "https://www.retrogames.cc/arcade-games/centipede.html",
+      tags: ["retro", "arcade", "shooter"],
+    },
+    {
+      title: "Missile Command",
+      description: "Intercept ballistic missiles before they annihilate your cities.",
+      link: "https://www.retrogames.cc/arcade-games/missile-command.html",
+      tags: ["retro", "arcade", "strategy"],
+    },
+    {
+      title: "Donkey Kong",
+      description: "Climb ladders and dodge barrels to rescue the princess from the ape.",
+      link: "https://www.retrogames.cc/arcade-games/donkey-kong.html",
+      tags: ["retro", "arcade", "platformer"],
+    },
+    {
+      title: "Dig Dug",
+      description: "Drill tunnels and inflate monsters in this underground classic.",
+      link: "https://www.retrogames.cc/arcade-games/dig-dug.html",
+      tags: ["retro", "arcade", "puzzle"],
+    },
+    {
+      title: "Q*bert",
+      description: "Hop on cubes to change their colour while dodging snakes and balls.",
+      link: "https://www.retrogames.cc/arcade-games/qbert.html",
+      tags: ["retro", "arcade", "puzzle"],
+    },
+    {
+      title: "Breakout",
+      description: "Bounce the ball to smash every brick off the screen in this Atari gem.",
+      link: "https://www.retrogames.cc/arcade-games/breakout.html",
+      tags: ["retro", "arcade", "reflex"],
+    },
+    {
+      title: "Bubble Bobble",
+      description: "Trap enemies in bubbles and pop them to clear each stage.",
+      link: "https://www.retrogames.cc/arcade-games/bubble-bobble.html",
+      tags: ["retro", "arcade", "platformer"],
+    },
+    {
+      title: "Ms. Pac-Man",
+      description: "The iconic sequel with new mazes, faster ghosts, and a bow on top.",
+      link: "https://www.retrogames.cc/arcade-games/ms-pac-man.html",
+      tags: ["retro", "arcade", "classic"],
+    },
+    {
+      title: "Super Mario Bros",
+      description: "Run, jump, and stomp through the Mushroom Kingdom to save Princess Peach.",
+      link: "https://supermariobros.io/",
+      embedUrl: "https://supermariobros.io/",
+      tags: ["retro", "nes", "platformer"],
+    },
+    {
+      title: "Contra",
+      description: "Run-and-gun your way through alien hordes in this NES co-op classic.",
+      link: "https://www.retrogames.cc/nes-games/contra.html",
+      tags: ["retro", "nes", "shooter"],
+    },
+    {
+      title: "Mega Man",
+      description: "Choose your stage, defeat robot masters, and steal their powers.",
+      link: "https://www.retrogames.cc/nes-games/mega-man.html",
+      tags: ["retro", "nes", "platformer"],
+    },
+    {
+      title: "Castlevania",
+      description: "Whip your way through Dracula's castle in this gothic action classic.",
+      link: "https://www.retrogames.cc/nes-games/castlevania.html",
+      tags: ["retro", "nes", "action"],
+    },
+    {
+      title: "Bomberman",
+      description: "Drop bombs strategically to blast enemies and clear the maze.",
+      link: "https://www.retrogames.cc/nes-games/bomberman.html",
+      tags: ["retro", "nes", "strategy"],
+    },
+    {
+      title: "Excitebike",
+      description: "Race motorcycles, time your ramps, and watch your engine temperature.",
+      link: "https://www.retrogames.cc/nes-games/excitebike.html",
+      tags: ["retro", "nes", "racing"],
+    },
+    {
+      title: "Punch-Out!!",
+      description: "Learn each boxer's patterns and punch your way to the championship belt.",
+      link: "https://www.retrogames.cc/nes-games/mike-tyson-s-punchout.html",
+      tags: ["retro", "nes", "fighting"],
+    },
+    {
+      title: "Street Fighter II",
+      description: "Choose your fighter and battle world warriors in this SNES fighting legend.",
+      link: "https://www.retrogames.cc/snes-games/street-fighter-ii-snes.html",
+      tags: ["retro", "snes", "fighting"],
+    },
+    {
+      title: "Mortal Kombat",
+      description: "Finish him! Brutal tournament fighting with iconic special moves.",
+      link: "https://www.retrogames.cc/snes-games/mortal-kombat.html",
+      tags: ["retro", "snes", "fighting"],
+    },
+    {
+      title: "Duck Hunt",
+      description: "Take aim and shoot ducks out of the sky before the dog laughs at you.",
+      link: "https://duckhuntjs.com/",
+      embedUrl: "https://duckhuntjs.com/",
+      tags: ["retro", "nes", "shooter"],
+    },
+    {
+      title: "Defender",
+      description: "Protect humanoids from alien abduction across a scrolling planet surface.",
+      link: "https://www.retrogames.cc/arcade-games/defender.html",
+      tags: ["retro", "arcade", "shooter"],
+    },
+  ],
+};
+
+export { person, social, newsletter, home, about, blog, work, gallery, music, playground };

@@ -238,3 +238,49 @@ export interface Gallery extends BasePageConfig {
     orientation: string;
   }>;
 }
+
+/**
+ * Music page configuration.
+ * @description Configuration for the Music page, showcasing favourite tracks and artists.
+ */
+export interface Music extends BasePageConfig {
+  /** List of favourite tracks */
+  tracks: Array<{
+    /** Track / song title */
+    title: string;
+    /** Artist name */
+    artist: string;
+    /** Album name */
+    album?: string;
+    /** Genre */
+    genre?: string;
+    /** Mood / vibe tags */
+    mood?: string[];
+    /** External link (Spotify, YouTube, etc.) */
+    link?: string;
+    /** Cover art image path */
+    cover?: string;
+  }>;
+}
+
+/**
+ * Playground page configuration.
+ * @description Configuration for the Playground page, listing embeddable / linkable browser games.
+ */
+export interface Playground extends BasePageConfig {
+  /** List of games */
+  games: Array<{
+    /** Game title */
+    title: string;
+    /** Short description */
+    description: string;
+    /** Thumbnail image path */
+    thumbnail?: string;
+    /** External URL to play the game */
+    link: string;
+    /** Optional direct embed URL (iframe src) */
+    embedUrl?: string;
+    /** Category tags */
+    tags?: string[];
+  }>;
+}
