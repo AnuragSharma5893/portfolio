@@ -53,6 +53,8 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 - Automatic open-graph and X image generation with next/og
 - Automatic schema and metadata generation based on the content file
 
+  
+
 ### Design
 - Responsive layout optimized for all screen sizes
 - Timeless design without heavy animations and motion
